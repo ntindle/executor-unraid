@@ -1,5 +1,19 @@
 # Executor for Unraid
 
+> **Moved to [ntindle/unraid-apps](https://github.com/ntindle/unraid-apps).** The template is
+> now [`templates/executor.xml`](https://github.com/ntindle/unraid-apps/blob/main/templates/executor.xml)
+> there and this document is
+> [`executor/README.md`](https://github.com/ntindle/unraid-apps/blob/main/executor/README.md); its
+> history moved with it. This repository is archived. Its files stay so that the template and
+> icon URLs of existing installs keep working, but they are no longer updated. Open issues at
+> <https://github.com/ntindle/unraid-apps/issues>.
+>
+> **Existing installs:** since Executor 1.6.10 the official image runs as a non-root user and
+> stops with `EACCES` on `/data/secret.key` under this template. Add `--user 99:100` to the
+> container's Extra Parameters, after `chown -R 99:100` on App Data written by 1.6.8 or
+> earlier; see
+> [the steps](https://github.com/ntindle/unraid-apps/blob/main/executor/README.md#containers-added-before-2026-10-04).
+
 This repository provides an unofficial
 [Unraid Community Applications](https://unraid.net/community/apps) template for
 [Executor](https://github.com/UsefulSoftwareCo/executor), a self-hosted MCP
